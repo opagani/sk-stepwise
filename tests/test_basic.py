@@ -1,36 +1,16 @@
-import sk_stepwise.sw as sw
+import sk_stepwise as sw
 import pytest
 
 
-def test_initialization() -> None:
-    print("test_initialization")
-    print(dir(sw))
+def test_initialization():
     model = None
     rounds = []
     optimizer = sw.StepwiseHyperoptOptimizer(model, rounds)
     assert optimizer is not None
 
 
-# import sk_stepwise as sw
-
-
-# def test_hello():
-#     assert sw.hello() == "Hello from sk-stepwise!"
-
-
-def test_that_fails() -> None:
-    ages = [1, 2, 3, 4, 5]
-    name = "suzzie"
-    rounds = []
-    assert "matt" == "fred"
-
-
-def test_with_exception(one):
-    assert one == 1
-
-
 @pytest.mark.xfail(raises=TypeError)
-def test_logistic() -> None:
+def test_logistic():
     from sklearn import linear_model
 
     model = linear_model.LinearRegression()
@@ -42,5 +22,5 @@ def test_logistic() -> None:
 
 
 @pytest.mark.matt
-def test_matt() -> None:
-    assert 1 == 1
+def test_matt():
+    assert "matt" == "matt"
