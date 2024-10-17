@@ -23,4 +23,4 @@ def test_logistic():
 
 @pytest.mark.matt
 def test_matt():
-    assert "matt" == "matt"
+    assert 'matt' == 'matt'
