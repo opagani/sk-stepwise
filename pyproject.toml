@@ -26,6 +26,7 @@ dev-dependencies = [
     "pyre-check>=0.9.22",
     "pytest>=8.3.3",
     "ruff>=0.6.9",
+    "wheel>=0.44.0",
 ]
 
 [tool.mypy]
